@@ -39,45 +39,6 @@ ul {
   list-style-type: none;
 }
 
-a,
-a.logo-caption-name,
-a.menu-item,
-a.menu-item:link,
-a.menu-item:visited {
-  color: var(--color-menu-text);
-  text-decoration: none;
-  transition-duration: 0.3s;
-  transition-property: all;
-  transition-delay: 0s;
-  transition-timing-function: ease-in-out;
-}
-
-a.menu-item {
-  position: relative;
-}
-
-a.menu-item:hover {
-  color: var(--color-accent);
-  cursor: pointer;
-}
-
-a.menu-item::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  height: 3px;
-  width: stretch;
-  background-color: transparent;
-  transition-duration: 0.3s;
-  transition-property: all;
-  transition-delay: 0s;
-  transition-timing-function: ease-in-out;
-}
-
-a.menu-item:hover::before {
-  background-color: var(--color-accent);
-}
-
 p,
 h1,
 h2,
@@ -173,6 +134,44 @@ form {
 
 .menu-item-container {
   height: 22px;
+}
+
+a.logo-caption-name,
+a.menu-item,
+a.menu-item:link,
+a.menu-item:visited {
+  color: var(--color-menu-text);
+  text-decoration: none;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+a.menu-item {
+  position: relative;
+}
+
+a.menu-item:hover {
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+a.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  height: 3px;
+  width: stretch;
+  background-color: transparent;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+a.menu-item:hover::before {
+  background-color: var(--color-accent);
 }
 
 .theme-container {
