@@ -253,7 +253,7 @@ a.menu-link:hover::before {
   height: 24px;
 }
 
-.button-container {
+.menu-button-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
