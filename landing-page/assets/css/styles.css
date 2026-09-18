@@ -132,14 +132,14 @@ form {
   font-weight: 600;
 }
 
-.menu-item-container {
+.menu-item {
   height: 22px;
 }
 
-a.logo-caption-name,
-a.menu-item,
-a.menu-item:link,
-a.menu-item:visited {
+a.logo-link,
+a.menu-link,
+a.menu-link:link,
+a.menu-link:visited {
   color: var(--color-menu-text);
   text-decoration: none;
   transition-duration: 0.3s;
@@ -148,16 +148,16 @@ a.menu-item:visited {
   transition-timing-function: ease-in-out;
 }
 
-a.menu-item {
+a.menu-link {
   position: relative;
 }
 
-a.menu-item:hover {
+a.menu-link:hover {
   color: var(--color-accent);
   cursor: pointer;
 }
 
-a.menu-item::before {
+a.menu-link::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -170,7 +170,7 @@ a.menu-item::before {
   transition-timing-function: ease-in-out;
 }
 
-a.menu-item:hover::before {
+a.menu-link:hover::before {
   background-color: var(--color-accent);
 }
 
@@ -188,7 +188,7 @@ a.menu-item:hover::before {
   cursor: pointer;
   transition-duration: 0.3s;
   transition-property: all;
-  transition-delay: 0.1s;
+  transition-delay: 0s;
   transition-timing-function: ease-in-out;
 }
 
@@ -238,7 +238,7 @@ a.menu-item:hover::before {
   cursor: pointer;
   transition-duration: 0.3s;
   transition-property: all;
-  transition-delay: 0.1s;
+  transition-delay: 0s;
   transition-timing-function: ease-in-out;
 }
 
