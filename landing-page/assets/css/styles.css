@@ -5,7 +5,7 @@
   --color-dark-72: rgba(10, 34, 48, 0.72);
   --color-primary: #f26b4f;
   --color-accent: #2fb8aa;
-  --color-gray: #f3efe6;
+  --color-beige: #f3efe6;
   --color-white: white;
   --color-white-12: rgba(255, 255, 255, 0.12);
   --color-white-20: rgba(255, 255, 255, 0.2);
@@ -73,8 +73,8 @@ button {
   color: var(--color-accent);
 }
 
-.color-gray {
-  color: var(--color-gray);
+.color-beige {
+  color: var(--color-beige);
 }
 
 .header-h1 {
@@ -420,7 +420,7 @@ a.menu-link:hover::before {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-gray);
+  background-color: var(--color-beige);
   border-radius: 18px;
   width: 100%;
   max-width: 1080px;
