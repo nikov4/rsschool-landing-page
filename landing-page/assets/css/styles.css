@@ -688,21 +688,21 @@ a.menu-link:hover::before {
   width: 230px;
   height: 30px;
   cursor: pointer;
+}
+
+.route-button-container:hover .route-arrow {
+  transform: translateX(10px);
+}
+
+.route-button-container:hover .route-button {
+  color: var(--color-primary);
+}
+
+.route-button {
   transition-duration: 0.3s;
   transition-property: all;
   transition-delay: 0s;
   transition-timing-function: ease-in-out;
-}
-
-.route-button-container:hover {
-  background-color: var(--color-accent);
-}
-
-.route-button-container:hover .route-button {
-  color: var(--color-white);
-}
-
-.route-button {
   cursor: pointer;
 }
 
@@ -712,4 +712,8 @@ a.menu-link:hover::before {
   background-repeat: no-repeat;
   width: 17px;
   height: 29px;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
 }
