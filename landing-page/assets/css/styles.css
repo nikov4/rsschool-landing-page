@@ -432,7 +432,6 @@ a.menu-link:hover::before {
   background-color: var(--color-beige);
   border-radius: 18px;
   width: 100%;
-  max-width: 1080px;
   margin-top: 70px;
 }
 
@@ -462,12 +461,12 @@ a.menu-link:hover::before {
 
 .shedule-date,
 .shedule-format {
-  width: 25%;
+  width: 30%;
 }
 
 .shedule-route {
   border-left: 1px solid var(--color-dark-12);
-  width: 50%;
+  width: 40%;
 }
 
 /* Slider */
