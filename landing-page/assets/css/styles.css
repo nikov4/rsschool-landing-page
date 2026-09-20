@@ -86,6 +86,26 @@ button {
   color: var(--color-white);
 }
 
+.background-dark {
+  background-color: var(--color-dark);
+}
+
+.background-primary {
+  background-color: var(--color-primary);
+}
+
+.background-accent {
+  background-color: var(--color-accent);
+}
+
+.background-beige {
+  background-color: var(--color-beige);
+}
+
+.background-white {
+  background-color: var(--color-white);
+}
+
 .header-h1 {
   font-size: 83.2px;
   line-height: 81.536px;
@@ -828,7 +848,7 @@ a.menu-link:hover::before {
   gap: 90px;
 }
 
-.expedition-content-container {
+.expedition-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -837,7 +857,7 @@ a.menu-link:hover::before {
 }
 
 .expedition-header {
-  max-width: 465px;
+  max-width: 430px;
 }
 
 .expedition-text {
@@ -932,4 +952,87 @@ a.menu-link:hover::before {
 
 .day-content-image {
   border-radius: 16px;
+}
+
+/* Expectation */
+
+.section-expectation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-dark);
+  gap: 20px;
+  padding: 120px 130px;
+  background-color: var(--color-white);
+}
+
+.expectation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.expectation-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  height: 430px;
+  padding: 51px;
+  border: 1px solid var(--color-dark-12);
+  border-radius: 16px;
+}
+
+.expectation-content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.expectation-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.expectation-caption {
+  font-size: 12.48px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.expectation-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-top: 112px;
+  height: 100%;
+}
+
+.expectation-header {
+  font-size: 38.4px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -2.1px;
+}
+
+.expectation-text {
+  font-size: 17px;
+  line-height: 28px;
 }
