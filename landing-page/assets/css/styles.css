@@ -70,6 +70,10 @@ button {
   color: var(--color-dark);
 }
 
+.color-dark-54 {
+  color: var(--color-dark-54);
+}
+
 .color-primary {
   color: var(--color-primary);
 }
@@ -106,6 +110,10 @@ button {
   background-color: var(--color-white);
 }
 
+.align-right {
+  text-align: right;
+}
+
 .header-h1 {
   font-size: 83.2px;
   line-height: 81.536px;
@@ -123,6 +131,23 @@ button {
   line-height: 16.64px;
   letter-spacing: 2.048px;
   text-transform: uppercase;
+}
+
+.arrow-down {
+  margin-top: 5px;
+  background-image: url(../icons/arrow-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 25px;
+}
+
+.seats-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 6px rgba(255, 122, 89, 0.18);
 }
 
 /* Header */
@@ -413,29 +438,12 @@ a.menu-link:hover::before {
   font-weight: 500;
 }
 
-.hero-arrow {
-  margin-top: 5px;
-  background-image: url(../icons/arrow-down.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 25px;
-}
-
 .hero-free-seats {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 12px;
-}
-
-.free-seats-light {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background: var(--color-primary);
-  box-shadow: 0 0 0 6px rgba(255, 122, 89, 0.18);
 }
 
 .free-seats-count {
@@ -845,7 +853,7 @@ a.menu-link:hover::before {
   align-items: flex-start;
   background-color: var(--color-dark);
   padding: 120px 130px;
-  gap: 90px;
+  gap: 80px;
 }
 
 .expedition-container {
@@ -1035,4 +1043,170 @@ a.menu-link:hover::before {
 .expectation-text {
   font-size: 17px;
   line-height: 28px;
+}
+
+/* Price */
+
+.section-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-beige);
+  padding: 120px 130px;
+  gap: 90px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 620px;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  max-width: 390px;
+  padding: 38px;
+  border-radius: 16px;
+  box-shadow: 0 29px 80px 0 var(--color-dark-12);
+}
+
+.booking-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 33px;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.price-text {
+  margin: 4px 0 40px 0;
+  color: var(--color-dark-72);
+  font-size: 17px;
+  line-height: 28.05px;
+}
+
+.price-line {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background: var(--color-dark-12);
+}
+
+.price-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.price-column {
+  min-width: 130px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.booking-column {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.price-column-accent {
+  color: var(--color-accent);
+  font-size: 11.52px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.382px;
+  text-transform: uppercase;
+}
+
+.booking-price-old {
+  margin: 10px 0 -20px 0;
+  color: var(--color-dark-54);
+  font-size: 18px;
+  line-height: 29px;
+  text-decoration-line: line-through;
+}
+
+.booking-price {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -3.8px;
+}
+
+.booking-price-caption {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0px;
+}
+
+.booking-price-details {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.price-free-seats {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.price-seats-count {
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.price-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  background-color: var(--color-dark);
+  border-radius: 99px;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.price-button-container:hover {
+  background-color: var(--color-accent);
+}
+
+.price-button {
+  cursor: pointer;
+  color: var(--color-white);
+  font-weight: 500;
 }
