@@ -853,7 +853,7 @@ a.menu-link:hover::before {
   align-items: flex-start;
   background-color: var(--color-dark);
   padding: 120px 130px;
-  gap: 80px;
+  gap: 90px;
 }
 
 .expedition-container {
@@ -1209,4 +1209,116 @@ a.menu-link:hover::before {
   cursor: pointer;
   color: var(--color-white);
   font-weight: 500;
+}
+
+/* Legal */
+
+.section-legal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-beige);
+  padding: 120px 130px;
+  gap: 20px;
+}
+
+.legal-header {
+  max-width: 760px;
+}
+
+.legal-text {
+  padding-top: 4px;
+  color: var(--color-dark-72);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.legal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.legal-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  width: 33.3%;
+  padding: 32px;
+}
+
+.legal-count {
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.7px;
+}
+
+.legal-caption {
+  padding: 20px 0;
+  font-size: 21.6px;
+  font-weight: 500;
+  line-height: 22.5px;
+  letter-spacing: -1.2px;
+}
+
+.legal-description {
+  max-width: 310px;
+  color: var(--color-dark-72);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.legal-button-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  border-bottom: 1px solid var(--color-dark);
+  height: 30px;
+  cursor: pointer;
+}
+
+.legal-button-container:hover .legal-arrow {
+  transform: translateY(10px);
+}
+
+.legal-button-container:hover .legal-button {
+  color: var(--color-primary);
+}
+
+.legal-button {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.legal-arrow {
+  margin-top: -2px;
+  background-image: url(../icons/arrow-down-s.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 29px;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
 }
