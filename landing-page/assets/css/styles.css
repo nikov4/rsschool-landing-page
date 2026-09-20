@@ -717,3 +717,100 @@ a.menu-link:hover::before {
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
 }
+
+/* Catamaran */
+
+.section-catamaran {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-beige);
+  padding: 120px 130px;
+  gap: 20px;
+}
+
+.catamaran-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 85px;
+}
+
+.catamaran-header {
+  max-width: 760px;
+}
+
+.catamaran-text {
+  align-self: flex-end;
+  max-width: 335px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28.05px;
+}
+
+.interior-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 48px;
+  gap: 16px;
+}
+
+.interior-scheme {
+  border-radius: 16px;
+}
+
+.interior-cabin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.scheme-image {
+  border-radius: 16px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.feature-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid var(--color-dark-12);
+}
+
+.feature-item-count {
+  color: var(--color-accent);
+  font-size: 12.16px;
+  line-height: 20.064px;
+  letter-spacing: 1.702px;
+}
+
+.feature-item-caption {
+  color: var(--color-dark);
+  font-size: 20px;
+  line-height: 20.8px;
+  letter-spacing: -1.1px;
+}
+
+.feature-item-text {
+  color: var(--color-dark-72);
+  font-size: 15.36px;
+  line-height: 23.808px;
+}
