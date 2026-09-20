@@ -814,3 +814,121 @@ a.menu-link:hover::before {
   font-size: 15.36px;
   line-height: 23.808px;
 }
+
+/* Expedition */
+
+.section-expedition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-dark);
+  padding: 120px 130px;
+  gap: 90px;
+}
+
+.expedition-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.expedition-header {
+  max-width: 465px;
+}
+
+.expedition-text {
+  margin-top: 4px;
+  color: var(--color-white-78);
+  font-size: 17px;
+  line-height: 28.05px;
+}
+
+.expedition-image {
+  margin-top: 12px;
+  border-radius: 16px;
+}
+
+.expedition-days-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+}
+
+.day-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.day-count-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.day-count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 56px;
+  min-height: 56px;
+  color: var(--color-dark);
+  border-radius: 28px;
+  background: var(--color-accent);
+  font-weight: 600;
+}
+
+.day-line {
+  width: 1px;
+  height: 100%;
+  background: var(--color-accent);
+}
+
+.day-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.day-content-caption {
+  color: var(--color-accent);
+  font-size: 11.84px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.day-content-header {
+  color: var(--color-white);
+  font-size: 26.4px;
+  line-height: 28px;
+  letter-spacing: -1.5px;
+}
+
+.day-content-text {
+  margin-top: 6px;
+  color: var(--color-white-78);
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.day-content-images {
+  margin: 14px 0 50px 0;
+}
+
+.day-content-image {
+  border-radius: 16px;
+}
