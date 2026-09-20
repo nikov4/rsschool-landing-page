@@ -1338,12 +1338,12 @@ a.menu-link:hover::before {
 }
 
 .request-content {
-  padding: 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+  margin: auto 0;
 }
 
 .request-header {
