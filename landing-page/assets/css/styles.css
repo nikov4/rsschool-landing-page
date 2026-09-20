@@ -848,7 +848,7 @@ a.menu-link:hover::before {
   gap: 90px;
 }
 
-.expedition-content-container {
+.expedition-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
