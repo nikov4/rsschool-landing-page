@@ -432,7 +432,6 @@ a.menu-link:hover::before {
   background-color: var(--color-beige);
   border-radius: 18px;
   width: 100%;
-  max-width: 1080px;
   margin-top: 70px;
 }
 
@@ -462,12 +461,12 @@ a.menu-link:hover::before {
 
 .shedule-date,
 .shedule-format {
-  width: 25%;
+  width: 30%;
 }
 
 .shedule-route {
   border-left: 1px solid var(--color-dark-12);
-  width: 50%;
+  width: 40%;
 }
 
 /* Slider */
@@ -689,21 +688,21 @@ a.menu-link:hover::before {
   width: 230px;
   height: 30px;
   cursor: pointer;
+}
+
+.route-button-container:hover .route-arrow {
+  transform: translateX(10px);
+}
+
+.route-button-container:hover .route-button {
+  color: var(--color-primary);
+}
+
+.route-button {
   transition-duration: 0.3s;
   transition-property: all;
   transition-delay: 0s;
   transition-timing-function: ease-in-out;
-}
-
-.route-button-container:hover {
-  background-color: var(--color-accent);
-}
-
-.route-button-container:hover .route-button {
-  color: var(--color-white);
-}
-
-.route-button {
   cursor: pointer;
 }
 
@@ -713,4 +712,105 @@ a.menu-link:hover::before {
   background-repeat: no-repeat;
   width: 17px;
   height: 29px;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Catamaran */
+
+.section-catamaran {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-beige);
+  padding: 120px 130px;
+  gap: 20px;
+}
+
+.catamaran-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 85px;
+}
+
+.catamaran-header {
+  max-width: 760px;
+}
+
+.catamaran-text {
+  align-self: flex-end;
+  max-width: 335px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28.05px;
+}
+
+.interior-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 48px;
+  gap: 16px;
+}
+
+.interior-scheme {
+  border-radius: 16px;
+}
+
+.interior-cabin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.scheme-image {
+  border-radius: 16px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.feature-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid var(--color-dark-12);
+}
+
+.feature-item-count {
+  color: var(--color-accent);
+  font-size: 12.16px;
+  line-height: 20.064px;
+  letter-spacing: 1.702px;
+}
+
+.feature-item-caption {
+  color: var(--color-dark);
+  font-size: 20px;
+  line-height: 20.8px;
+  letter-spacing: -1.1px;
+}
+
+.feature-item-text {
+  color: var(--color-dark-72);
+  font-size: 15.36px;
+  line-height: 23.808px;
 }
