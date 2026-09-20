@@ -798,6 +798,7 @@ a.menu-link:hover::before {
 .feature-item-count {
   color: var(--color-accent);
   font-size: 12.16px;
+  font-weight: 700;
   line-height: 20.064px;
   letter-spacing: 1.702px;
 }
