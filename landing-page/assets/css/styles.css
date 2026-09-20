@@ -1338,8 +1338,7 @@ a.menu-link:hover::before {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  /*background-color: var(--color-dark);*/
-  background: linear-gradient(to bottom left, #114149 15%, #0a2230);
+  background: linear-gradient(to top right, #0a2230 40%, #114149);
   padding: 120px 130px;
   gap: 100px;
 }
