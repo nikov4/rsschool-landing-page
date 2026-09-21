@@ -4,11 +4,11 @@ const buttonHeader = document.querySelector(".menu-button-container");
 const buttonHero = document.querySelector(".hero-button-container");
 const buttonRoute = document.querySelector(".route-button-container");
 const buttonPrice = document.querySelector(".price-button-container");
-const targetRequest = document.getElementById("request");
-const targetExpedition = document.getElementById("expedition");
+const targetRequest = document.querySelector("#request");
+const targetExpedition = document.querySelector("#expedition");
 
 // detect current page
-const locationPath = window.location.pathname;
+const locationPath = location.pathname;
 const pathArray = locationPath.split("/");
 const currentPage = pathArray.at(-1);
 
@@ -22,8 +22,8 @@ if (currentPage === "index.html") {
 
 // catalog page
 else {
-  redirectButtons(buttonHeader);
-  redirectButtons(buttonHero);
+  redirectButtons(buttonHeader, "index", "request");
+  redirectButtons(buttonHero, "catalog", "catalog");
 }
 
 function scrollButtons(button, target) {
@@ -35,8 +35,8 @@ function scrollButtons(button, target) {
   });
 }
 
-function redirectButtons(button, target) {
+function redirectButtons(button, page, target) {
   button.addEventListener("click", () => {
-    window.location.href = "index.html#request";
+    location = `${page}.html#${target}`;
   });
 }
