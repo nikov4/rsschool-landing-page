@@ -237,6 +237,7 @@ a.logo-link-gray,
 a.menu-link,
 a.menu-link:link,
 a.menu-link:visited {
+  position: relative;
   color: var(--color-white);
   text-decoration: none;
   transition-duration: 0.3s;
@@ -258,7 +259,8 @@ a.menu-link:hover {
   cursor: pointer;
 }
 
-a.menu-link::before {
+a.menu-link::before,
+span.menu-link::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -271,8 +273,18 @@ a.menu-link::before {
   transition-timing-function: ease-in-out;
 }
 
-a.menu-link:hover::before {
+a.menu-link:hover::before,
+span.menu-link-active::before {
   background-color: var(--color-accent);
+}
+
+span.menu-link {
+  position: relative;
+  display: inline-block;
+}
+
+span.menu-link-active {
+  color: var(--color-accent);
 }
 
 .theme-container {
@@ -1338,8 +1350,7 @@ a.menu-link:hover::before {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  /*background-color: var(--color-dark);*/
-  background: linear-gradient(to bottom left, #114149 15%, #0a2230);
+  background: linear-gradient(to top right, #0a2230 40%, #114149);
   padding: 120px 130px;
   gap: 100px;
 }
