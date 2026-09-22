@@ -1,0 +1,20 @@
+/* mobile */
+
+@media (max-width: 768px) {
+  .menu-container,
+  .menu-button-container {
+    display: none;
+  }
+
+  span.burger-link::before {
+    top: 50px;
+  }
+
+  .burger-button-container {
+    display: block;
+  }
+
+  .burger-container {
+    display: flex;
+  }
+}
