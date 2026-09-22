@@ -385,17 +385,8 @@ span.menu-link-active {
 
 .video-overlay {
   background-image:
-    linear-gradient(
-      90deg,
-      rgba(10, 34, 48, 0.96) 0%,
-      rgba(10, 34, 48, 0.76) 48%,
-      rgba(10, 34, 48, 0.14) 86%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(10, 34, 48, 0.08) 35%,
-      rgba(10, 34, 48, 0.7) 100%
-    );
+    linear-gradient(90deg, rgba(10, 34, 48, 0.96) 0%, rgba(10, 34, 48, 0.76) 48%, rgba(10, 34, 48, 0.14) 86%),
+    linear-gradient(180deg, rgba(10, 34, 48, 0.08) 35%, rgba(10, 34, 48, 0.7) 100%);
   z-index: -1;
 }
 
@@ -618,12 +609,7 @@ span.menu-link-active {
 
 .slide-01 {
   background-image:
-    linear-gradient(
-      180deg,
-      rgba(10, 34, 48, 0.04) 28%,
-      rgba(10, 34, 48, 0.9) 100%
-    ),
-    url(../images/slide-01.jpg);
+    linear-gradient(180deg, rgba(10, 34, 48, 0.04) 28%, rgba(10, 34, 48, 0.9) 100%), url(../images/slide-01.jpg);
   background-position: center;
   background-size: center;
   background-repeat: no-repeat;
@@ -631,22 +617,12 @@ span.menu-link-active {
 
 .slide-02 {
   background-image:
-    linear-gradient(
-      180deg,
-      rgba(10, 34, 48, 0.04) 28%,
-      rgba(10, 34, 48, 0.9) 100%
-    ),
-    url(../images/slide-02.jpg);
+    linear-gradient(180deg, rgba(10, 34, 48, 0.04) 28%, rgba(10, 34, 48, 0.9) 100%), url(../images/slide-02.jpg);
 }
 
 .slide-03 {
   background-image:
-    linear-gradient(
-      180deg,
-      rgba(10, 34, 48, 0.04) 28%,
-      rgba(10, 34, 48, 0.9) 100%
-    ),
-    url(../images/slide-03.jpg);
+    linear-gradient(180deg, rgba(10, 34, 48, 0.04) 28%, rgba(10, 34, 48, 0.9) 100%), url(../images/slide-03.jpg);
 }
 
 .slide-count {
