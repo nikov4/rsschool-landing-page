@@ -153,6 +153,16 @@ button {
   box-shadow: 0 0 0 6px rgba(255, 122, 89, 0.18);
 }
 
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.no-display {
+  display: none;
+  opacity: 0;
+}
+
 /* Header */
 
 .header {
@@ -250,8 +260,12 @@ a.logo-link-gray {
   color: var(--color-white-62);
 }
 
-a.menu-link {
+a.burger-link,
+a.burger-link:link,
+a.burger-link:visited {
   position: relative;
+  color: var(--color-dark);
+  text-decoration: none;
 }
 
 a.menu-link:hover {
@@ -285,6 +299,11 @@ span.menu-link {
 
 span.menu-link-active {
   color: var(--color-accent);
+}
+
+span.burger-link-active {
+  color: var(--color-white);
+  border-bottom: 2px solid var(--color-white);
 }
 
 .theme-container {
