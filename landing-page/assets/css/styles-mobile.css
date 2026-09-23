@@ -2,6 +2,7 @@
 
 @media (max-width: 768px) {
   .menu-container,
+  .theme-container,
   .menu-button-container {
     display: none;
   }
