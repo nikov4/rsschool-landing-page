@@ -123,7 +123,8 @@ button {
 
 .header-h1 {
   /*font-size: 83px;*/
-  font-size: clamp(50px, calc(53px + 33 * ((100vw - 768px) / (1440 - 768))), 83px);
+  font-size: clamp(53px, calc(53px + 33 * ((100vw - 768px) / (1440 - 768))), 83px);
+  font-weight: 700;
   /*line-height: 82px;*/
   line-height: clamp(48px, calc(48px + 34 * ((100vw - 768px) / (1440 - 768))), 82px);
   /*letter-spacing: -4.576px;*/
@@ -132,16 +133,19 @@ button {
 
 .header-h2 {
   /*font-size: 64px;*/
-  font-size: 64px;
+  font-size: clamp(48px, calc(48px + 16 * ((100vw - 768px) / (1440 - 768))), 64px);
+  font-weight: 600;
   /*line-height: 63px;*/
-  line-height: 63px;
-  letter-spacing: -3.52px;
+  line-height: clamp(42px, calc(42px + 21 * ((100vw - 768px) / (1440 - 768))), 63px);
+  /*letter-spacing: -3.5px;*/
+  letter-spacing: clamp(-3.5px, calc(-2.3px - 1.2 * ((100vw - 768px) / (1440 - 768))), -2.3px);
 }
 
 .content-caption {
-  font-size: 12.8px;
-  line-height: 16.64px;
-  letter-spacing: 2.048px;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -536,12 +540,19 @@ span.menu-link-active {
 /* Slider */
 
 .section-slider {
+  background-color: var(--color-beige);
+}
+
+.slider-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin: 0 auto;
+  width: var(--content-width);
+  padding: 100px 0;
   background-color: var(--color-beige);
-  padding: 120px 130px;
+  /*padding: 120px 130px;*/
   gap: 24px;
 }
 
@@ -554,14 +565,17 @@ span.menu-link-active {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 24px;
   width: 100%;
 }
 
-.slider-content {
+.slider-text {
   color: var(--color-dark-72);
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 28.05px;
+  /*font-size: 17px;*/
+  font-size: clamp(16px, calc(16px + 1 * ((100vw - 380px) / (1440 - 380))), 17px);
+  font-weight: 400; /*line-height: 28px;*/
+  /*line-height: 28px;*/
+  line-height: clamp(26px, calc(26px + 2 * ((100vw - 380px) / (1440 - 380))), 28px);
 }
 
 .slider-controls {
@@ -601,7 +615,7 @@ span.menu-link-active {
   background-color: var(--color-primary);
 }
 
-.slider-container {
+.slider-items-container {
   margin-top: 28px;
   display: flex;
   flex-direction: row;
@@ -617,8 +631,10 @@ span.menu-link-active {
   align-items: flex-start;
   gap: 8px;
   padding: 24px;
-  width: 381px;
-  height: 540px;
+  /*width: 381px;*/
+  width: clamp(320px, calc(320px + 61 * ((100vw - 380px) / (1440 - 380))), 381px);
+  /*height: 540px;*/
+  height: clamp(500px, calc(500px + 40 * ((100vw - 380px) / (1440 - 380))), 540px);
   border-radius: 22px;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -627,10 +643,16 @@ span.menu-link-active {
   transition-timing-function: ease-in-out;
 }
 
+.slide-item:hover {
+  box-shadow: 0 14px 38px 0 rgba(10, 34, 48, 0.17);
+}
+
+/*
 .slide-image {
   max-width: 381px;
   max-height: 540px;
 }
+*/
 
 .slide-01 {
   background-image:
@@ -693,24 +715,32 @@ span.menu-link-active {
 /* Route */
 
 .section-route {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   background-color: var(--color-white);
-  padding: 120px 130px;
-  gap: 20px;
 }
 
 .route-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: var(--content-width);
+  /*padding: 100px 0;*/
+  padding: clamp(75px, calc(75px + 50 * ((100vw - 380px) / (1440 - 380))), 125px) 0;
+  gap: 20px;
+}
+
+.route-columns {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
   width: 100%;
 }
 
 .route-header {
+  min-width: 368px;
   max-width: 620px;
 }
 
