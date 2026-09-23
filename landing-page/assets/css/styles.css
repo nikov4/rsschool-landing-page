@@ -800,12 +800,18 @@ span.menu-link-active {
 /* Catamaran */
 
 .section-catamaran {
+  background-color: var(--color-beige);
+}
+
+.catamaran-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--color-beige);
-  padding: 120px 130px;
+  margin: 0 auto;
+  width: var(--content-width);
+  padding: clamp(75px, calc(75px + 50 * ((100vw - 380px) / (1440 - 380))), 125px) 0;
+  /*padding: 120px 130px;*/
   gap: 20px;
 }
 
@@ -814,7 +820,7 @@ span.menu-link-active {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 85px;
+  gap: 40px;
 }
 
 .catamaran-header {
@@ -852,15 +858,17 @@ span.menu-link-active {
 
 .scheme-image {
   border-radius: 16px;
+  max-width: var(--content-width);
 }
 
 .features-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  margin-top: 40px;
+  flex-wrap: wrap;
   gap: 16px;
+  margin-top: 40px;
 }
 
 .feature-item-container {
@@ -869,6 +877,8 @@ span.menu-link-active {
   justify-content: space-between;
   align-items: flex-start;
   gap: 14px;
+  /*width: 25%;*/
+  max-width: 283px;
   padding: 25px;
   border-radius: 16px;
   border: 1px solid var(--color-dark-12);
