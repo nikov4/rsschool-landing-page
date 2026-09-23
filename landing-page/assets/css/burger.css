@@ -1,3 +1,5 @@
+/* Burger button */
+
 .burger-button-container {
   display: none;
   margin-top: 4px;
@@ -59,6 +61,8 @@
   background-color: var(--color-primary);
 }
 
+/* Burger menu */
+
 .burger-container {
   display: none;
   position: absolute;
@@ -95,4 +99,17 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 160%;
+}
+
+a.burger-link,
+a.burger-link:link,
+a.burger-link:visited {
+  position: relative;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+span.burger-link-active {
+  color: var(--color-white);
+  border-bottom: 2px solid var(--color-white);
 }

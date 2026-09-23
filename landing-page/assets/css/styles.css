@@ -260,14 +260,6 @@ a.logo-link-gray {
   color: var(--color-white-62);
 }
 
-a.burger-link,
-a.burger-link:link,
-a.burger-link:visited {
-  position: relative;
-  color: var(--color-dark);
-  text-decoration: none;
-}
-
 a.menu-link:hover {
   color: var(--color-accent);
   cursor: pointer;
@@ -299,11 +291,6 @@ span.menu-link {
 
 span.menu-link-active {
   color: var(--color-accent);
-}
-
-span.burger-link-active {
-  color: var(--color-white);
-  border-bottom: 2px solid var(--color-white);
 }
 
 .theme-container {
