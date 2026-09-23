@@ -715,24 +715,32 @@ span.menu-link-active {
 /* Route */
 
 .section-route {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   background-color: var(--color-white);
-  padding: 120px 130px;
-  gap: 20px;
 }
 
 .route-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: var(--content-width);
+  /*padding: 100px 0;*/
+  padding: clamp(75px, calc(75px + 50 * ((100vw - 380px) / (1440 - 380))), 125px) 0;
+  gap: 20px;
+}
+
+.route-columns {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
   width: 100%;
 }
 
 .route-header {
+  min-width: 368px;
   max-width: 620px;
 }
 

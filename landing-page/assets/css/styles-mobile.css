@@ -40,6 +40,19 @@
     font-size: clamp(43px, calc(43px + 5 * ((100vw - 380px) / (768 - 380))), 48px);
     font-weight: 400;
   }
+
+  .route-columns {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .route-header {
+    max-width: 368px;
+  }
+
+  .route-content {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 635px) {
