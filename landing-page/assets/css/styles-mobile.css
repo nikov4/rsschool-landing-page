@@ -123,6 +123,18 @@
   .legal-description {
     max-width: none;
   }
+
+  .request-container {
+    flex-direction: column;
+  }
+
+  .reques-form-container {
+    align-self: center;
+  }
+
+  .request-button {
+    max-width: none;
+  }
 }
 
 @media (max-width: 635px) {

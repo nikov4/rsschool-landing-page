@@ -1449,13 +1449,20 @@ span.menu-link-active {
 /* Request form */
 
 .section-request {
+  background: linear-gradient(to top right, #0a2230 40%, #114149);
+}
+
+.request-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  background: linear-gradient(to top right, #0a2230 40%, #114149);
-  padding: 120px 130px;
-  gap: 100px;
+  /*gap: 100px;*/
+  gap: clamp(40px, calc(40px + 60 * ((100vw - 380px) / (1440 - 380))), 100px);
+  margin: 0 auto;
+  width: var(--content-width);
+  /*padding: 120px 130px;*/
+  padding: clamp(75px, calc(75px + 50 * ((100vw - 380px) / (1440 - 380))), 125px) 0;
 }
 
 .request-content {
@@ -1512,8 +1519,10 @@ span.menu-link-active {
   justify-content: space-between;
   align-items: flex-start;
   gap: 18px;
-  padding: 38px;
-  width: 490px;
+  /*padding: 38px;*/
+  padding: clamp(22px, calc(22px + 16 * ((100vw - 380px) / (1440 - 380))), 38px);
+  /*width: 490px;*/
+  min-width: clamp(348px, calc(348px + 42 * ((100vw - 380px) / (1440 - 380))), 390px);
   background-color: var(--color-white);
   border-radius: 16px;
 }
@@ -1546,12 +1555,12 @@ span.menu-link-active {
 }
 
 .request-button-container {
-  margin-top: 200px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  /*gap: 8px;*/
+  gap: clamp(0px, calc(0px + 8 * ((100vw - 768px) / (1440 - 768))), 8px);
   margin-top: 10px;
   background-color: var(--color-primary);
   border-radius: 99px;
@@ -1569,6 +1578,8 @@ span.menu-link-active {
 }
 
 .request-button {
+  /*max-width: 280px;*/
+  max-width: clamp(230px, calc(230px + 50 * ((100vw - 768px) / (1440 - 768))), 280px);
   cursor: pointer;
   color: var(--color-white);
   font-weight: 500;
