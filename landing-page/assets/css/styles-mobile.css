@@ -103,6 +103,26 @@
     min-width: none;
     width: 365px;
   }
+
+  .legal-columns {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .legal-column,
+  .legal-description {
+    width: 100%;
+  }
+
+  .legal-caption {
+    padding: 8px 0 0 0;
+  }
+
+  .legal-description {
+    max-width: none;
+  }
 }
 
 @media (max-width: 635px) {
