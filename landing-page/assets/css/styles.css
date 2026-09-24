@@ -1211,8 +1211,9 @@ span.menu-link-active {
   align-items: flex-start;
   gap: 10px;
   /*max-width: 390px;*/
-  min-width: clamp(365px, calc(365px + 25 * ((100vw - 768px) / (1440 - 768))), 390px);
-  padding: 38px;
+  min-width: clamp(348px, calc(348px + 42 * ((100vw - 380px) / (1440 - 380))), 390px);
+  /*padding: 38px;*/
+  padding: clamp(22px, calc(22px + 16 * ((100vw - 380px) / (1440 - 380))), 38px);
   border-radius: 16px;
   box-shadow: 0 29px 80px 0 var(--color-dark-12);
 }
