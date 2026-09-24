@@ -16,6 +16,17 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .price-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .price-text {
+    padding-bottom: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --page-width: 100vw;
@@ -80,6 +91,17 @@
 
   .day-content-text {
     font-weight: 400;
+  }
+
+  .price-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .booking-container {
+    align-self: center;
+    min-width: none;
+    width: 365px;
   }
 }
 
