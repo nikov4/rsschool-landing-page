@@ -115,4 +115,13 @@
   .feature-item-container {
     max-width: 358px;
   }
+
+  .expectation-columns {
+    flex-direction: column;
+  }
+
+  .expectation-column {
+    width: 100%;
+    height: 100%;
+  }
 }
