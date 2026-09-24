@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/modern-normalize.css">
+  <link rel="stylesheet" href="./assets/css/burger.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles-mobile.css">
+  <link rel="stylesheet" href="./assets/css/catalog.css">
+  <link rel="stylesheet" href="./assets/css/catalog-mobile.css">
+  <link rel="icon" href="./favicon.ico">
+  <title>Каталог - Сейшеллы 2027</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="modal-wrapper no-display">
+      <div class="modal-window"></div>
+    </div>
+
+    <div class="burger-container">
+      <div class="burger-theme-container">
+        <div class="theme-day"></div>
+        <div class="theme-night"></div>
+      </div>
+      <ul class="burger-items-container">
+        <li class="burger-item"><a href="./index.html" class="burger-link">Главная</a></li>
+        <li class="burger-item"><span class="burger-link-active">Каталог</span></li>
+        <li class="burger-item"><a href="./index.html#catamaran" class="burger-link">О формате</a></li>
+        <li class="burger-item"><a href="./index.html#expedition" class="burger-link">Маршрут</a></li>
+        <li class="burger-item"><a href="./index.html#price" class="burger-link">Стоимость</a></li>
+        <li class="burger-item"><a href="tel:+70000000000" class="burger-link">+7 999 000-00-00</a></li>
+        <li class="burger-item"><a href="mailto:hello@mail.com" class="burger-link">hello@mail.com</a></li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <nav class="nav">
+
+        <div class="logo-container">
+          <a href="./index.html"><img src="./assets/images/logo.png" width="40" height="40" alt="Сейшеллы 2027"></a>
+          <ul class="logo-caption-container">
+            <li class="logo-caption-name"><a class="logo-link" href="./index.html">SEYCHELLES</a></li>
+            <li class="logo-caption-text"><a class="logo-link-gray" href="./index.html">EXPEDITION · 2027</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-container">
+          <ul class="menu-container">
+            <li class="menu-item"><span class="menu-link menu-link-active">Каталог</span></li>
+            <li class="menu-item"><a class="menu-link" href="./index.html#catamaran">О формате</a></li>
+            <li class="menu-item"><a class="menu-link" href="./index.html#expedition">Маршрут</a></li>
+            <li class="menu-item"><a class="menu-link" href="./index.html#price">Стоимость</a></li>
+          </ul>
+
+          <div class="theme-container">
+            <div class="theme-day"></div>
+            <div class="theme-night"></div>
+          </div>
+
+          <div class="menu-button-container">
+            <button class="menu-button">Занять место</button>
+          </div>
+
+          <div class="burger-button-container">
+            <div class="burger-button">
+              <span class="burger-line burger-line-top"></span>
+              <span class="burger-line burger-line-center"></span>
+              <span class="burger-line burger-line-bottom"></span>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <section class="section-hero">
+        <div class="video-wrapper">
+          <video class="video-bg" autoplay loop muted>
+            <!--<source src="./assets/videos/main-960x540.mp4" type="video/webm">-->
+            <source src="./assets/videos/seychelles-sunset.mp4" type="video/mp4">
+          </video>
+          <div class="video-overlay"></div>
+          <div class="hero-content">
+            <p class="content-caption color-beige">Каталог впечатлений · Сейшелы 2027</p>
+            <h1 class="header-h1 hero-header color-white">Найдите свой способ<br><span class="color-accent">прожить
+                Сейшелы</span></h1>
+            <p class="hero-text">Большая экспедиция под парусом, один идеальный остров или несколько часов в океане —
+              выбирайте ритм, а маршрут мы соберём вокруг вас.</p>
+            <div class="hero-cta">
+              <div class="hero-button-container">
+                <button class="hero-button">Смотреть все варианты</button>
+                <div class="arrow-down"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stat-container">
+            <div class="stat-column stat-line-border">
+              <ul class="stat-row">
+                <li class="stat-count">03</li>
+                <li class="stat-caption">категории</li>
+              </ul>
+            </div>
+            <div class="stat-column stat-line-border">
+              <ul class="stat-row">
+                <li class="stat-count">24</li>
+                <li class="stat-caption">идеи путешествий</li>
+              </ul>
+            </div>
+            <div class="stat-column">
+              <ul class="stat-row">
+                <li class="stat-count">4 ч — 9 дн</li>
+                <li class="stat-caption">продолжительность</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hero-select-category" id="catalog">
+            <div class="category-container">
+              <div class="category-caption">Выберите свой формат</div>
+              <ul class="category-buttons">
+                <li class="category-button button-active">
+                  <div class="category-button-number">01</div>
+                  <div class="category-button-caption">Экспедиции под парусом</div>
+                </li>
+                <li class="category-button">
+                  <div class="category-button-number">02</div>
+                  <div class="category-button-caption">Островные открытия</div>
+                </li>
+                <li class="category-button">
+                  <div class="category-button-number">03</div>
+                  <div class="category-button-caption">Морские впечатления</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section-catalog">
+        <div class="catalog-container">
+
+          <p class="content-caption color-accent">01 · Главные путешествия</p>
+          <div class="catalog-info">
+            <h2 class="header-h2 catalog-header">Экспедиции под парусом</h2>
+            <p class="catalog-text">Несколько островов за одно путешествие, камерная команда и катамаран как ваш
+              передвижной дом. Опыт яхтинга не нужен.</p>
+          </div>
+
+          <div class="catalog-items">
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-01.jpg" alt="Сейшельская экспедиция">
+              <div class="item-content">
+                <p class="item-tag">Большая экспедиция</p>
+                <p class="item-name">Сейшельская экспедиция</p>
+                <p class="item-description">Маэ, Праслин, Ла-Диг и Курьёз — самый полный маршрут по внутренним островам.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">8 дней · март 2027</p>
+                <p class="item-price">170 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-02.jpg" alt="Inner Islands">
+              <div class="item-content">
+                <p class="item-tag">Классический маршрут</p>
+                <p class="item-name">Inner Islands</p>
+                <p class="item-description">Бирюзовые бухты, короткие переходы и четыре острова без спешки.</p>
+                <div class="item-line"></div>
+                <p class="item-duration">6 дней · апрель 2027</p>
+                <p class="item-price">138 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-03.jpg" alt="Гранитный маршрут">
+              <div class="item-content">
+                <p class="item-tag">Для исследователей</p>
+                <p class="item-name">Гранитный маршрут</p>
+                <p class="item-description">Дикие якорные стоянки, скальные берега и рассветы вдали от туристических
+                  троп.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">7 дней · май 2027</p>
+                <p class="item-price">155 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-04.jpg" alt="Семейная флотилия">
+              <div class="item-content">
+                <p class="item-tag">С детьми 8+</p>
+                <p class="item-name">Семейная флотилия</p>
+                <p class="item-description">Спокойный темп, безопасные лагуны и островные приключения для всей семьи.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">8 дней · июнь 2027</p>
+                <p class="item-price">192 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-04.jpg" alt="Семейная флотилия">
+              <div class="item-content">
+                <p class="item-tag">С детьми 8+</p>
+                <p class="item-name">Семейная флотилия</p>
+                <p class="item-description">Спокойный темп, безопасные лагуны и островные приключения для всей семьи.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">8 дней · июнь 2027</p>
+                <p class="item-price">192 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-04.jpg" alt="Семейная флотилия">
+              <div class="item-content">
+                <p class="item-tag">С детьми 8+</p>
+                <p class="item-name">Семейная флотилия</p>
+                <p class="item-description">Спокойный темп, безопасные лагуны и островные приключения для всей семьи.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">8 дней · июнь 2027</p>
+                <p class="item-price">192 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-04.jpg" alt="Семейная флотилия">
+              <div class="item-content">
+                <p class="item-tag">С детьми 8+</p>
+                <p class="item-name">Семейная флотилия</p>
+                <p class="item-description">Спокойный темп, безопасные лагуны и островные приключения для всей семьи.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">8 дней · июнь 2027</p>
+                <p class="item-price">192 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-item-container">
+              <img class="item-image" src="./assets/images/catalog-01-04.jpg" alt="Семейная флотилия">
+              <div class="item-content">
+                <p class="item-tag">С детьми 8+</p>
+                <p class="item-name">Семейная флотилия</p>
+                <p class="item-description">Спокойный темп, безопасные лагуны и островные приключения для всей семьи.
+                </p>
+                <div class="item-line"></div>
+                <p class="item-duration">8 дней · июнь 2027</p>
+                <p class="item-price">192 000 ₽</p>
+                <ul class="item-links-container">
+                  <li class="link-text">Подробнее</li>
+                  <li class="link-icon"></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="catalog-button-container">
+            <button class="catalog-button">Показать ещё экспедиции</button>
+            <div class="catalog-plus">+</div>
+          </div>
+
+          <!--<p class="catalog-total">4 из 8 вариантов</p>-->
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-menu-container">
+          <ul class="footer-column">
+            <li class="footer-row">
+              <div class="logo-container">
+                <a href="./index.html"><img src="./assets/images/logo.png" width="40" height="40"
+                    alt="Сейшеллы 2027"></a>
+                <ul class="logo-caption-container">
+                  <li class="logo-caption-name"><a class="logo-link" href="./index.html">SEYCHELLES</a></li>
+                  <li class="logo-caption-text"><a class="logo-link-gray" href="./index.html">EXPEDITION · 2027</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer-row footer-text">Камерная экспедиция по островам на катамаране Lagoon 380 с
+              лицензированным
+              капитаном.</li>
+          </ul>
+          <ul class="footer-column">
+            <li class="footer-row footer-caption">Навигация</li>
+            <li class="footer-row"><a href="./catalog.html" class="footer-link">Каталог островов</a></li>
+            <li class="footer-row"><a href="./index.html#expedition" class="footer-link">Маршрут</a></li>
+            <li class="footer-row"><a href="./index.html#price" class="footer-link">Стоимость</a></li>
+          </ul>
+          <ul class="footer-column">
+            <li class="footer-row footer-caption">Контакты</li>
+            <li class="footer-row"><a href="tel:+70000000000" class="footer-link">+7 999 000-00-00</a></li>
+            <li class="footer-row"><a href="mailto:hello@mail.com" class="footer-link">hello@mail.com</a></li>
+            <li class="footer-row"><a href="#" class="footer-link" target="_blank" rel="noopener">Виктория, Сейшелы
+                ↗</a>
+            </li>
+          </ul>
+          <ul class="footer-column">
+            <li class="footer-row footer-caption">На связи</li>
+            <li class="footer-row"><a href="#" class="footer-link" target="_blank" rel="noopener">Telegram ↗</a></li>
+            <li class="footer-row"><a href="#" class="footer-link" target="_blank" rel="noopener">WhatsApp ↗</a></li>
+            <li class="footer-row"><a href="./index.html#request" class="footer-link">Оставить заявку →</a></li>
+          </ul>
+        </div>
+        <ul class="footer-bottom-container">
+          <li class="footer-bottom-item">&copy; 2027 · Авторская экспедиция</li>
+          <li class="footer-bottom-item">Договор · официальные чеки · Crew List</li>
+          <li class="footer-bottom-item">[ФИО организатора] · [ИНН]</li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/burger.js"></script>
+  <script src="./assets/js/slider.js"></script>
+
+</body>
+
+</html>
