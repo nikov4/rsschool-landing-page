@@ -10,6 +10,10 @@
     /*height: 580px;*/
     /*height: clamp(580px, calc(500px + 40 * ((100vw - 380px) / (1440 - 380))), 540px);*/
   }
+
+  .expedition-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -72,6 +76,10 @@
 
   .catamaran-text {
     max-width: 100%;
+  }
+
+  .day-content-text {
+    font-weight: 400;
   }
 }
 

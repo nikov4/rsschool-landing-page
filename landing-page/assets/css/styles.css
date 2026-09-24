@@ -908,16 +908,23 @@ span.menu-link-active {
 /* Expedition */
 
 .section-expedition {
+  background-color: var(--color-dark);
+}
+
+.expedition-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   background-color: var(--color-dark);
-  padding: 120px 130px;
   gap: 90px;
+  /*padding: 120px 130px;*/
+  padding: clamp(75px, calc(75px + 50 * ((100vw - 380px) / (1440 - 380))), 125px) 0;
+  margin: 0 auto;
+  width: var(--content-width);
 }
 
-.expedition-container {
+.expedition-content-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -932,13 +939,16 @@ span.menu-link-active {
 .expedition-text {
   margin-top: 4px;
   color: var(--color-white-78);
-  font-size: 17px;
-  line-height: 28.05px;
+  /*font-size: 17px;*/
+  font-size: clamp(16px, calc(16px + 1 * ((100vw - 380px) / (1440 - 380))), 17px);
+  /*line-height: 28px;*/
+  line-height: clamp(26px, calc(26px + 2 * ((100vw - 380px) / (1440 - 380))), 28px);
 }
 
 .expedition-image {
   margin-top: 12px;
   border-radius: 16px;
+  width: 100%;
 }
 
 .expedition-days-container {
@@ -970,8 +980,10 @@ span.menu-link-active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 56px;
-  min-height: 56px;
+  /*min-width: 56px;*/
+  min-width: clamp(44px, calc(44px + 12 * ((100vw - 380px) / (1440 - 380))), 56px);
+  /*min-height: 56px;*/
+  min-height: clamp(44px, calc(44px + 12 * ((100vw - 380px) / (1440 - 380))), 56px);
   color: var(--color-dark);
   border-radius: 28px;
   background: var(--color-accent);
@@ -994,7 +1006,7 @@ span.menu-link-active {
 
 .day-content-caption {
   color: var(--color-accent);
-  font-size: 11.84px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 1.5px;
@@ -1011,8 +1023,10 @@ span.menu-link-active {
 .day-content-text {
   margin-top: 6px;
   color: var(--color-white-78);
-  font-size: 17px;
-  line-height: 28px;
+  /*font-size: 17px;*/
+  font-size: clamp(16px, calc(16px + 1 * ((100vw - 380px) / (1440 - 380))), 17px);
+  /*line-height: 28px;*/
+  line-height: clamp(26px, calc(26px + 2 * ((100vw - 380px) / (1440 - 380))), 28px);
 }
 
 .day-content-images {
@@ -1020,6 +1034,7 @@ span.menu-link-active {
 }
 
 .day-content-image {
+  width: 100%;
   border-radius: 16px;
 }
 
