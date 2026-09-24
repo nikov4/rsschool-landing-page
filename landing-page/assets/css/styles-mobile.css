@@ -1,4 +1,50 @@
 /* mobile */
+@media (max-width: 1300px) {
+  .interior-container {
+    flex-direction: column;
+  }
+
+  .scheme-images:nth-child(1) {
+    /* width: 741px*/
+    width: clamp(358px, calc(358px + 383 * ((100vw - 380px) / (1440 - 380))), 741px);
+    /*height: 580px;*/
+    /*height: clamp(580px, calc(500px + 40 * ((100vw - 380px) / (1440 - 380))), 540px);*/
+  }
+
+  .expedition-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1080px) {
+  .price-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .price-text {
+    padding-bottom: 0px;
+  }
+
+  .footer-menu-container {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .footer-column:nth-child(1) {
+    flex-basis: 100%;
+  }
+
+  .footer-column:nth-child(2),
+  .footer-column:nth-child(3),
+  .footer-column:nth-child(4) {
+    flex: 1;
+  }
+
+  .footer-text {
+    width: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   :root {
@@ -53,6 +99,64 @@
   .route-content {
     max-width: 100%;
   }
+
+  .catamaran-header-container {
+    flex-direction: column;
+  }
+
+  .catamaran-text {
+    max-width: 100%;
+  }
+
+  .day-content-text {
+    font-weight: 400;
+  }
+
+  .price-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .booking-container {
+    align-self: center;
+  }
+
+  .legal-columns {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .legal-column,
+  .legal-description {
+    width: 100%;
+  }
+
+  .legal-caption {
+    padding: 8px 0 0 0;
+  }
+
+  .legal-description {
+    max-width: none;
+  }
+
+  .request-container {
+    flex-direction: column;
+  }
+
+  .reques-form-container {
+    align-self: center;
+  }
+
+  .request-button {
+    max-width: none;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 635px) {
@@ -77,5 +181,31 @@
 
   .slider-controls-container {
     flex-direction: column;
+  }
+
+  .features-container {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .feature-item-container {
+    max-width: 358px;
+  }
+
+  .expectation-columns {
+    flex-direction: column;
+  }
+
+  .expectation-column {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-menu-container {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    margin-bottom: 20px;
   }
 }
