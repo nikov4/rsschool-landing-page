@@ -33,3 +33,14 @@ container.addEventListener("click", () => {
   html.classList.remove("no-scroll");
   modalWrapper.classList.add("no-display");
 });
+
+// listent ESC key and close menu
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") {
+    return false;
+  }
+  burger.classList.remove("burger__active");
+  burgerContainer.classList.remove("burger-container__open");
+  html.classList.remove("no-scroll");
+  modalWrapper.classList.add("no-display");
+});
