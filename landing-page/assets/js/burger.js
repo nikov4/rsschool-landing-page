@@ -33,3 +33,27 @@ container.addEventListener("click", () => {
   html.classList.remove("no-scroll");
   modalWrapper.classList.add("no-display");
 });
+
+// close menu when ESC key pressed
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") {
+    return false;
+  }
+  burger.classList.remove("burger__active");
+  burgerContainer.classList.remove("burger-container__open");
+  html.classList.remove("no-scroll");
+  modalWrapper.classList.add("no-display");
+});
+
+// close menu when screen size < 768px
+const burgerScreenSize = matchMedia("(max-width: 768px)");
+function handleScreenResize(event) {
+  if (event.matches) {
+    return false;
+  }
+  burger.classList.remove("burger__active");
+  burgerContainer.classList.remove("burger-container__open");
+  html.classList.remove("no-scroll");
+  modalWrapper.classList.add("no-display");
+}
+burgerScreenSize.addEventListener("change", handleScreenResize);
